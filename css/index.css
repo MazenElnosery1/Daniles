@@ -1,0 +1,424 @@
+*{
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.nav-item{
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.navbar-nav .nav-link.active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+
+}
+.home{
+    background-image: linear-gradient(to right , rgb(0, 0, 0,0.6) ,rgb(0, 0, 0,0.6)) , url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.home-content p{
+    font-size: 60px;
+}
+.home-content p:after{
+    font-weight: 500;
+    content: "";
+    animation: header-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes header-animation{
+    0%{content:"|";}
+    2%{content:"D|";}
+    4%{content:"De|";}
+    6%{content:"Dev|";}
+    8%{content:"Deve|";}
+    10%{content:"Devel|";}
+    12%{content:"Develo|";}
+    14%{content:"Develop|";}
+    16%{content:"Develope|";}
+    18%{content:"Developer|";}
+    20%{content:"Develope|";}
+    22%{content:"Develop|";}
+    24%{content:"Develo|";}
+    26%{content:"Devel|";}
+    28%{content:"Deve|";}
+    30%{content:"Dev|";}
+    32%{content:"De|";}
+    34%{content:"D|";}
+    36%{content:"|";}
+    38%{content:"|";}
+    40%{content:"D|";}
+    42%{content:"De|";}
+    44%{content:"Des|";}
+    46%{content:"Desi|";}
+    48%{content:"Desig|";}
+    50%{content:"Design|";}
+    52%{content:"Designe|";}
+    54%{content:"Designer|";}
+    56%{content:"Designe|";}
+    58%{content:"Design|";}
+    60%{content:"Desig|";}
+    63%{content:"Desi|";}
+    67%{content:"De|";}
+    69%{content:"D|";}
+    72%{content:"|";}
+    75%{content: "M|";}
+    78%{content: "Ma|";}
+    81%{content: "Maz|";}
+    84%{content: "Maze|";}
+    87%{content: "Mazen|";}
+    90%{content: "Maze|";}
+    93%{content: "Maz|";}
+    97%{content: "Ma|";}
+    100%{content: "M|";}
+  
+}
+.home-icon li{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0,0.7);
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.home-icon a{
+    color: white;
+}
+.item1 h3{
+    font-weight: 800;
+}
+.item1 .p1{
+ letter-spacing: 2px;
+
+}
+.item1 .p2{
+    color: rgb(116, 129, 130);
+    line-height: 1.6;
+    font-size: 15px;
+}
+.item1-img {
+   padding-left: 30px;
+}
+.item1-img:after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+    
+}
+.progress{
+    height: 22px;
+    box-shadow: 0px 1px 5px inset;
+}
+
+.progress-bar::after{
+content: attr(data-value);
+position: absolute;
+right: 20px;
+}
+.btn1{
+    width: 140px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.btn2{
+    width: 130px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+
+}
+.services{
+    background: #f7f7f7;
+}
+.header h3{
+    font-size: 40px;
+    font-weight: 800;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    background-color: transparent !important;
+    z-index: 10;
+}
+.header h3::after{  
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: -1;
+}
+.item h6{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.item p{
+    word-spacing: 2px;
+    font-size: 14px;
+}
+.icon-holder{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:  #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 0.5s;
+}
+.icon-holder i{
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.item:hover .icon-holder{
+    background-color: black;
+}
+.item:hover .icon-holder i{
+    color: white;
+}
+.icon-holder2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+.item-p-content2 h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.item-p-content{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.icon-holder2:hover{
+    background-color: white;
+    color: black;
+}
+.item-p:hover .item-p-content{
+    opacity: 1;
+    transform: translateY(0);
+}
+.item-p-content{
+    opacity: 0;
+    transform: translateY(5%);
+    transition: all 0.5s;
+}
+.nav-item button{
+    color: black !important;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 16px;    
+    background-color: transparent !important;
+ 
+    
+}
+.nav-pills .nav-link.active::after{
+    content: '';
+    margin: auto;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+   
+}
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: gray !important;
+}
+
+.car-inner img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+}
+.Testimonials{
+    background-color: #f6f6f6;
+}
+.count h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.our-team{
+    background-color: #f6f6f6;
+}
+.team{
+    background-color: rgba(52, 52, 52, .8);
+
+}
+.team-content{
+     color: white;
+    /* background-color: rgba(52, 52, 52, .8); */
+}
+.team-img-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgb(255, 255, 255 ,0.9);
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    transition: all 0.5s;
+}
+.team:hover .team-img-icon{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1,1);
+}
+
+.team-img-icon li{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: black;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid black;
+    transition: all 0.5s;
+
+}
+.team-img-icon li a{
+    transition: all 0.5s;
+    color: white;
+}
+.team-img-icon li:hover{
+    background-color: white;
+
+}
+.team-img-icon li:hover a{
+    color: black;
+}
+.team-img img{
+    transition: all 0.5s;
+}
+.team-img:hover img{
+    transform: scale(120%);
+}
+
+.last-container{
+    width: 65%;
+}
+.icon-holder-contact{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: all 0.5s;
+}
+.item-contact h6{
+    font-weight: 700;
+}
+.item-contact p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+
+.item-contact:hover .icon-holder-contact{
+    background-color: black;
+    color: white;
+}
+.text-area{
+    resize:none ;
+}
+.input{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #efeeee;
+    font-size: 12px;
+}
+.input:focus{
+    outline: none;
+    
+}
+.submit{
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+}
+.footer{
+    background-color: #1c1c1c;
+}
+.footer p{
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #748182;
+}
